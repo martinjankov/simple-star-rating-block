@@ -1,0 +1,340 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-simple-star-rating-block {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star {
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  display: inline-block;
+  background: lightgray;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  position: relative;
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star:last-child {
+  margin: 0;
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-full {
+  background: #FFC700;
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inherit;
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-1::after {
+  background: linear-gradient(-90deg, #FFC700 1%, transparent 1%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-2::after {
+  background: linear-gradient(-90deg, #FFC700 2%, transparent 2%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-3::after {
+  background: linear-gradient(-90deg, #FFC700 3%, transparent 3%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-4::after {
+  background: linear-gradient(-90deg, #FFC700 4%, transparent 4%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-5::after {
+  background: linear-gradient(-90deg, #FFC700 5%, transparent 5%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-6::after {
+  background: linear-gradient(-90deg, #FFC700 6%, transparent 6%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-7::after {
+  background: linear-gradient(-90deg, #FFC700 7%, transparent 7%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-8::after {
+  background: linear-gradient(-90deg, #FFC700 8%, transparent 8%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-9::after {
+  background: linear-gradient(-90deg, #FFC700 9%, transparent 9%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-10::after {
+  background: linear-gradient(-90deg, #FFC700 10%, transparent 10%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-11::after {
+  background: linear-gradient(-90deg, #FFC700 11%, transparent 11%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-12::after {
+  background: linear-gradient(-90deg, #FFC700 12%, transparent 12%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-13::after {
+  background: linear-gradient(-90deg, #FFC700 13%, transparent 13%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-14::after {
+  background: linear-gradient(-90deg, #FFC700 14%, transparent 14%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-15::after {
+  background: linear-gradient(-90deg, #FFC700 15%, transparent 15%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-16::after {
+  background: linear-gradient(-90deg, #FFC700 16%, transparent 16%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-17::after {
+  background: linear-gradient(-90deg, #FFC700 17%, transparent 17%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-18::after {
+  background: linear-gradient(-90deg, #FFC700 18%, transparent 18%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-19::after {
+  background: linear-gradient(-90deg, #FFC700 19%, transparent 19%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-20::after {
+  background: linear-gradient(-90deg, #FFC700 20%, transparent 20%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-21::after {
+  background: linear-gradient(-90deg, #FFC700 21%, transparent 21%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-22::after {
+  background: linear-gradient(-90deg, #FFC700 22%, transparent 22%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-23::after {
+  background: linear-gradient(-90deg, #FFC700 23%, transparent 23%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-24::after {
+  background: linear-gradient(-90deg, #FFC700 24%, transparent 24%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-25::after {
+  background: linear-gradient(-90deg, #FFC700 25%, transparent 25%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-26::after {
+  background: linear-gradient(-90deg, #FFC700 26%, transparent 26%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-27::after {
+  background: linear-gradient(-90deg, #FFC700 27%, transparent 27%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-28::after {
+  background: linear-gradient(-90deg, #FFC700 28%, transparent 28%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-29::after {
+  background: linear-gradient(-90deg, #FFC700 29%, transparent 29%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-30::after {
+  background: linear-gradient(-90deg, #FFC700 30%, transparent 30%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-31::after {
+  background: linear-gradient(-90deg, #FFC700 31%, transparent 31%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-32::after {
+  background: linear-gradient(-90deg, #FFC700 32%, transparent 32%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-33::after {
+  background: linear-gradient(-90deg, #FFC700 33%, transparent 33%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-34::after {
+  background: linear-gradient(-90deg, #FFC700 34%, transparent 34%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-35::after {
+  background: linear-gradient(-90deg, #FFC700 35%, transparent 35%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-36::after {
+  background: linear-gradient(-90deg, #FFC700 36%, transparent 36%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-37::after {
+  background: linear-gradient(-90deg, #FFC700 37%, transparent 37%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-38::after {
+  background: linear-gradient(-90deg, #FFC700 38%, transparent 38%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-39::after {
+  background: linear-gradient(-90deg, #FFC700 39%, transparent 39%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-40::after {
+  background: linear-gradient(-90deg, #FFC700 40%, transparent 40%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-41::after {
+  background: linear-gradient(-90deg, #FFC700 41%, transparent 41%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-42::after {
+  background: linear-gradient(-90deg, #FFC700 42%, transparent 42%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-43::after {
+  background: linear-gradient(-90deg, #FFC700 43%, transparent 43%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-44::after {
+  background: linear-gradient(-90deg, #FFC700 44%, transparent 44%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-45::after {
+  background: linear-gradient(-90deg, #FFC700 45%, transparent 45%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-46::after {
+  background: linear-gradient(-90deg, #FFC700 46%, transparent 46%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-47::after {
+  background: linear-gradient(-90deg, #FFC700 47%, transparent 47%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-48::after {
+  background: linear-gradient(-90deg, #FFC700 48%, transparent 48%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-49::after {
+  background: linear-gradient(-90deg, #FFC700 49%, transparent 49%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-50::after {
+  background: linear-gradient(-90deg, #FFC700 50%, transparent 50%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-51::after {
+  background: linear-gradient(-90deg, #FFC700 51%, transparent 51%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-52::after {
+  background: linear-gradient(-90deg, #FFC700 52%, transparent 52%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-53::after {
+  background: linear-gradient(-90deg, #FFC700 53%, transparent 53%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-54::after {
+  background: linear-gradient(-90deg, #FFC700 54%, transparent 54%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-55::after {
+  background: linear-gradient(-90deg, #FFC700 55%, transparent 55%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-56::after {
+  background: linear-gradient(-90deg, #FFC700 56%, transparent 56%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-57::after {
+  background: linear-gradient(-90deg, #FFC700 57%, transparent 57%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-58::after {
+  background: linear-gradient(-90deg, #FFC700 58%, transparent 58%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-59::after {
+  background: linear-gradient(-90deg, #FFC700 59%, transparent 59%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-60::after {
+  background: linear-gradient(-90deg, #FFC700 60%, transparent 60%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-61::after {
+  background: linear-gradient(-90deg, #FFC700 61%, transparent 61%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-62::after {
+  background: linear-gradient(-90deg, #FFC700 62%, transparent 62%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-63::after {
+  background: linear-gradient(-90deg, #FFC700 63%, transparent 63%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-64::after {
+  background: linear-gradient(-90deg, #FFC700 64%, transparent 64%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-65::after {
+  background: linear-gradient(-90deg, #FFC700 65%, transparent 65%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-66::after {
+  background: linear-gradient(-90deg, #FFC700 66%, transparent 66%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-67::after {
+  background: linear-gradient(-90deg, #FFC700 67%, transparent 67%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-68::after {
+  background: linear-gradient(-90deg, #FFC700 68%, transparent 68%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-69::after {
+  background: linear-gradient(-90deg, #FFC700 69%, transparent 69%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-70::after {
+  background: linear-gradient(-90deg, #FFC700 70%, transparent 70%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-71::after {
+  background: linear-gradient(-90deg, #FFC700 71%, transparent 71%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-72::after {
+  background: linear-gradient(-90deg, #FFC700 72%, transparent 72%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-73::after {
+  background: linear-gradient(-90deg, #FFC700 73%, transparent 73%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-74::after {
+  background: linear-gradient(-90deg, #FFC700 74%, transparent 74%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-75::after {
+  background: linear-gradient(-90deg, #FFC700 75%, transparent 75%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-76::after {
+  background: linear-gradient(-90deg, #FFC700 76%, transparent 76%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-77::after {
+  background: linear-gradient(-90deg, #FFC700 77%, transparent 77%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-78::after {
+  background: linear-gradient(-90deg, #FFC700 78%, transparent 78%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-79::after {
+  background: linear-gradient(-90deg, #FFC700 79%, transparent 79%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-80::after {
+  background: linear-gradient(-90deg, #FFC700 80%, transparent 80%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-81::after {
+  background: linear-gradient(-90deg, #FFC700 81%, transparent 81%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-82::after {
+  background: linear-gradient(-90deg, #FFC700 82%, transparent 82%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-83::after {
+  background: linear-gradient(-90deg, #FFC700 83%, transparent 83%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-84::after {
+  background: linear-gradient(-90deg, #FFC700 84%, transparent 84%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-85::after {
+  background: linear-gradient(-90deg, #FFC700 85%, transparent 85%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-86::after {
+  background: linear-gradient(-90deg, #FFC700 86%, transparent 86%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-87::after {
+  background: linear-gradient(-90deg, #FFC700 87%, transparent 87%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-88::after {
+  background: linear-gradient(-90deg, #FFC700 88%, transparent 88%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-89::after {
+  background: linear-gradient(-90deg, #FFC700 89%, transparent 89%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-90::after {
+  background: linear-gradient(-90deg, #FFC700 90%, transparent 90%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-91::after {
+  background: linear-gradient(-90deg, #FFC700 91%, transparent 91%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-92::after {
+  background: linear-gradient(-90deg, #FFC700 92%, transparent 92%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-93::after {
+  background: linear-gradient(-90deg, #FFC700 93%, transparent 93%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-94::after {
+  background: linear-gradient(-90deg, #FFC700 94%, transparent 94%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-95::after {
+  background: linear-gradient(-90deg, #FFC700 95%, transparent 95%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-96::after {
+  background: linear-gradient(-90deg, #FFC700 96%, transparent 96%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-97::after {
+  background: linear-gradient(-90deg, #FFC700 97%, transparent 97%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-98::after {
+  background: linear-gradient(-90deg, #FFC700 98%, transparent 98%);
+}
+.wp-block-create-block-simple-star-rating-block .ssrb-star.ssrb-perc-99::after {
+  background: linear-gradient(-90deg, #FFC700 99%, transparent 99%);
+}

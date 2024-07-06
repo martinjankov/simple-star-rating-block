@@ -1,0 +1,54 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-create-block-simple-star-rating-block {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+
+	.ssrb-star {
+		width: 20px;
+		height: 20px;
+		margin: 0 2px;
+		display: inline-block;
+		background: lightgray;
+		clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		position: relative;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&.ssrb-full {
+			background: #FFC700;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			clip-path: inherit;
+		}
+
+		@for $i from 1 through 99 {
+			&.ssrb-perc-#{$i}::after {
+				$percent: #{$i} + '%';
+				background: linear-gradient(90deg, #FFC700 $percent, transparent $percent);
+			}
+		}
+	}
+}
+
