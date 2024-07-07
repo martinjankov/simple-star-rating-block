@@ -1,7 +1,7 @@
 === Simple Star Rating Block ===
-Contributors: MartinCV
+Contributors: martin7ba
 Tags: block, star rating, Gutenberg, custom fields, reviews
-Tested up to: 6.5
+Tested up to: 6.5.5
 Stable tag: 0.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
