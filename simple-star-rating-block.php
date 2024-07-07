@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Simple Star Rating Block
- * Description:       Star Rating Block allows you to display star ratings with manually entered value or pulled from a custom field
+ * Description:       Simple Star Rating Block is a versatile and user-friendly WordPress plugin designed to integrate seamlessly with the Gutenberg editor. Whether you need to display star ratings for products, services, or content, this block makes it easy and efficient.
  * Requires at least: 6.1
  * Requires PHP:      8.0
  * Version:           0.1.0
