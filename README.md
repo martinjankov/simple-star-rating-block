@@ -6,7 +6,7 @@ Stable tag: 0.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Simple Star Rating Block allows you to effortlessly display star ratings either by manually entering the value or pulling it from a custom field. Perfect for reviews, testimonials, and rating systems on your WordPress site.
+Simple Star Rating Block allows you to display star ratings either by manually entering the value or pulling it from a custom field.
 
 == Description ==
 
