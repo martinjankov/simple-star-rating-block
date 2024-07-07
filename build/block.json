@@ -6,7 +6,7 @@
   "title": "Simple Star Rating Block",
   "category": "widgets",
   "icon": "starHalf",
-  "description": "Example block scaffolded with Create Block tool.",
+  "description": "Star Rating Block allows you to display star ratings with manually entered value or pulled from a custom field.",
   "example": {},
   "supports": {
     "html": false
@@ -23,6 +23,14 @@
     "customField": {
       "type": "string",
       "default": ""
+    },
+    "starColor": {
+      "type": "string",
+      "default": "#FFC700"
+    },
+    "starSize": {
+      "type": "number",
+      "default": 20
     }
   },
   "textdomain": "simple-star-rating-block",

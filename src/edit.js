@@ -1,15 +1,15 @@
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
 import { __ } from "@wordpress/i18n";
-import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
+import {
+	useBlockProps,
+	InspectorControls,
+	ColorPalette,
+} from "@wordpress/block-editor";
 import {
 	PanelBody,
 	TextControl,
 	ToggleControl,
 	ComboboxControl,
+	RangeControl,
 } from "@wordpress/components";
 import { useEffect, useState } from "@wordpress/element";
 import apiFetch from "@wordpress/api-fetch";
@@ -17,7 +17,8 @@ import apiFetch from "@wordpress/api-fetch";
 import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
-	const { rating, customField, useCustomField } = attributes;
+	const { rating, customField, useCustomField, starColor, starSize } =
+		attributes;
 	const [customFields, setCustomFields] = useState([]);
 	const [postMetaData, setPostMetaData] = useState({});
 
@@ -61,15 +62,15 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps()}>
 			<InspectorControls>
-				<PanelBody title={__("Rating Settings", "rating-block")}>
+				<PanelBody title={__("Rating Settings", "simple-star-rating-block")}>
 					<ToggleControl
-						label={__("Show From Custom Field", "rating-block")}
+						label={__("Show From Custom Field", "simple-star-rating-block")}
 						checked={useCustomField}
 						onChange={(value) => setAttributes({ useCustomField: value })}
 					/>
 					{useCustomField && (
 						<ComboboxControl
-							label={__("Custom Field Key", "rating-block")}
+							label={__("Custom Field Key", "simple-star-rating-block")}
 							value={customField}
 							options={customFields.map((field) => ({
 								label: field,
@@ -80,7 +81,7 @@ export default function Edit({ attributes, setAttributes }) {
 					)}
 					{!useCustomField && (
 						<TextControl
-							label={__("Rating", "rating-block")}
+							label={__("Rating", "simple-star-rating-block")}
 							type="number"
 							min="0"
 							max="5"
@@ -91,22 +92,50 @@ export default function Edit({ attributes, setAttributes }) {
 						/>
 					)}
 				</PanelBody>
+				<PanelBody
+					title={__("Style", "simple-star-rating-block")}
+					initialOpen={false}
+				>
+					<ColorPalette
+						label={__("Star Color", "simple-star-rating-block")}
+						value={starColor}
+						onChange={(color) => setAttributes({ starColor: color })}
+					/>
+					<RangeControl
+						label={__("Star Size", "simple-star-rating-block")}
+						value={starSize}
+						onChange={(value) => setAttributes({ starSize: value })}
+						min={10}
+						max={50}
+					/>
+				</PanelBody>
 			</InspectorControls>
-			{Array.from({ length: 5 }, (_, i) => {
-				if (i < fullStars) {
-					return <span key={i} className="ssrb-star ssrb-full"></span>;
-				} else if (i === fullStars && partialStar > 0) {
-					const percentage = Math.round(partialStar * 100);
-					return (
-						<span
-							key={i}
-							className={`ssrb-star ssrb-perc-${percentage}`}
-						></span>
-					);
-				} else {
-					return <span key={i} className="ssrb-star"></span>;
-				}
-			})}
+			<div style={{ fontSize: `${starSize}px` }}>
+				{Array.from({ length: 5 }, (_, i) => {
+					if (i < fullStars) {
+						return (
+							<span
+								key={i}
+								className="ssrb-star ssrb-full"
+								style={{ backgroundColor: starColor }}
+							></span>
+						);
+					} else if (i === fullStars && partialStar > 0) {
+						const percentage = Math.round(partialStar * 100);
+						return (
+							<span
+								key={i}
+								className={`ssrb-star ssrb-perc-${percentage}`}
+								style={{
+									backgroundImage: `linear-gradient(90deg, ${starColor} ${percentage}%, transparent ${percentage}%)`,
+								}}
+							></span>
+						);
+					} else {
+						return <span key={i} className="ssrb-star"></span>;
+					}
+				})}
+			</div>
 		</div>
 	);
 }

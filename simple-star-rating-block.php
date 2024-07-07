@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Simple Star Rating Block
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Star Rating Block allows you to display star ratings with manually entered value or pulled from a custom field
  * Requires at least: 6.1
  * Requires PHP:      8.0
  * Version:           0.1.0

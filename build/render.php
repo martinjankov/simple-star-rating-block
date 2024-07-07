@@ -15,20 +15,21 @@ if ( $attributes['useCustomField'] ) {
 	$rating = $attributes['rating'] ?? 0;
 }
 
-if ( $rating ) {
-	$full_stars   = floor( $rating );
-	$partial_star = $rating - $full_stars;
-}
+$full_stars   = floor( $rating );
+$partial_star = $rating - $full_stars;
+
+$star_color = $attributes['starColor'] ?? '#FFC700';
+$star_size = $attributes['starSize'] ?? 20;
 
 ?>
-<span <?php echo get_block_wrapper_attributes(); ?> title="<?php echo esc_attr( $rating ); ?>">
+<span <?php echo get_block_wrapper_attributes(); ?> title="<?php echo esc_attr( $rating ); ?>" style="font-size: <?php echo esc_attr( $star_size ); ?>px;">
 	<?php
 	for ( $i = 1; $i <= 5; $i++ ) {
 		if ( $i <= $full_stars ) {
-			echo '<div class="ssrb-star ssrb-full"></div>';
+			echo '<div class="ssrb-star ssrb-full" style="background-color: ' . esc_attr( $star_color ) . ';"></div>';
 		} elseif ( $i == $full_stars + 1 && $partial_star > 0 ) {
 			$percentage = round( $partial_star * 100 );
-			echo '<div class="ssrb-star ssrb-perc-' . esc_attr( $percentage ) . '"></div>';
+			echo '<div class="ssrb-star ssrb-perc-' . esc_attr( $percentage ) . '" style="background-image: linear-gradient(90deg, ' . esc_attr( $star_color ) . ' ' . esc_attr( $percentage ) . '%, transparent ' . esc_attr( $percentage ) . '%);"></div>';
 		} else {
 			echo '<div class="ssrb-star"></div>';
 		}
