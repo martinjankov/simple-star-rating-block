@@ -10,12 +10,12 @@
 $rating = 0;
 
 if ( $attributes['useCustomField'] ) {
-	$rating = get_post_meta( get_the_ID(), $attributes['customField'], true );
+	$rating = (float) get_post_meta( get_the_ID(), $attributes['customField'], true );
 } else {
-	$rating = $attributes['rating'] ?? 0;
+	$rating = (float) ( $attributes['rating'] ?? 0 );
 }
 
-$full_stars   = floor( (float) $rating );
+$full_stars   = floor( $rating );
 $partial_star = $rating - $full_stars;
 
 $star_color = $attributes['starColor'] ?? '#FFC700';
