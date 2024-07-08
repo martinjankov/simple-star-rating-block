@@ -15,7 +15,7 @@ if ( $attributes['useCustomField'] ) {
 	$rating = $attributes['rating'] ?? 0;
 }
 
-$full_stars   = floor( $rating );
+$full_stars   = floor( (float) $rating );
 $partial_star = $rating - $full_stars;
 
 $star_color = $attributes['starColor'] ?? '#FFC700';
