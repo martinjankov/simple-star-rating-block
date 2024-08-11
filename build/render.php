@@ -7,6 +7,10 @@
  * @package SimpleStarRatingBlock
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 $rating = 0;
 
 if ( $attributes['useCustomField'] ) {

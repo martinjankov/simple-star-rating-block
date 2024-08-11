@@ -34,13 +34,17 @@ To install the Simple Star Rating Block plugin, follow these steps:
 
 == Frequently Asked Questions ==
 
-= How do I add a star rating to a post or page? =
+= How do I add a star rating to a post, page or custom post type? =
 
 Simply add the "Star Rating Block" from the Gutenberg block inserter, then set your desired rating or link it to a custom field.
 
 = Can I customize the appearance of the star ratings? =
 
 Yes, you can customize the size, color, and style of the stars through the block settings in the Gutenberg editor.
+
+= I don't see ACF fields in the Custom Field Key List? =
+
+To see the ACF fields in the list you need to enable the ACF Group where the field is to show in the REST API. See screenshot 4 on how to do that.
 
 == Screenshots ==
 
@@ -50,6 +54,11 @@ Yes, you can customize the size, color, and style of the stars through the block
 4. **Enable Option for ACF Group to pull rating from ACF Field :** Enable "Show in REST" so that the ACF Group can show in the Fields list on the Simple Star Rating Block
 
 == Changelog ==
+
+= 0.1.1 =
+
+- Enabled to successfully pull custom fields from Custom Post Types
+  _Release Date - 11 August 2024_
 
 = 0.1.0 =
 

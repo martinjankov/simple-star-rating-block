@@ -78,9 +78,12 @@ function Edit({
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
     if (useCustomField) {
       const postId = wp.data.select("core/editor").getCurrentPostId();
-      const postType = wp.data.select("core/editor").getCurrentPostType();
+      let postType = wp.data.select("core/editor").getCurrentPostType();
+      if (postType === "page" || postType === "post") {
+        postType += "s";
+      }
       _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_5___default()({
-        path: `/wp/v2/${postType}s/${postId}`
+        path: `/wp/v2/${postType}/${postId}`
       }).then(post => {
         const md = {
           ...post.meta,
@@ -1864,7 +1867,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunksimple_star_rating_block"] = globalThis["webpackChunksimple_star_rating_block"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkmartincv_simple_star_rating_block"] = globalThis["webpackChunkmartincv_simple_star_rating_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

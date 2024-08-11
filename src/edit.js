@@ -25,8 +25,11 @@ export default function Edit({ attributes, setAttributes }) {
 	useEffect(() => {
 		if (useCustomField) {
 			const postId = wp.data.select("core/editor").getCurrentPostId();
-			const postType = wp.data.select("core/editor").getCurrentPostType();
-			apiFetch({ path: `/wp/v2/${postType}s/${postId}` }).then((post) => {
+			let postType = wp.data.select("core/editor").getCurrentPostType();
+			if (postType === "page" || postType === "post") {
+				postType += "s";
+			}
+			apiFetch({ path: `/wp/v2/${postType}/${postId}` }).then((post) => {
 				const md = { ...post.meta, ...post.acf };
 				const meta = Object.keys(post.meta);
 				const acf = Object.keys(post.acf);
