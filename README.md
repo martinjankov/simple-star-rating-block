@@ -1,16 +1,19 @@
 === Simple Star Rating Block ===
 Contributors: martin7ba
 Tags: block, star rating, Gutenberg, custom fields, reviews
-Tested up to: 6.5.5
+Tested up to: 6.6.1
 Stable tag: 0.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Development Version: https://github.com/martinjankov/simple-star-rating-block
 
 Simple Star Rating Block allows you to display star ratings either by manually entering the value or pulling it from a custom field.
 
 == Description ==
 
 Simple Star Rating Block is a versatile and user-friendly WordPress plugin designed to integrate seamlessly with the Gutenberg editor. Whether you need to display star ratings for products, services, or content, this block makes it easy and efficient.
+
+Development Version can be found on: https://github.com/martinjankov/simple-star-rating-block
 
 ### Features:
 
